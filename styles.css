@@ -1,15 +1,13 @@
 body {
     background-color: gray;
 }
-h1 {
-    color: black;
-    text-align: center;
-
+div{
+    height: 200px;
+    width: auto;
+    background-color: red;
 }
-h3 {
-    color: black;
-    text-align: center;
-}
-p {
-    color: rgb(0, 0, 0);
+section {
+    height: 500px;
+    width: auto;
+    background-color: blue;
 }
