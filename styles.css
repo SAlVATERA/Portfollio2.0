@@ -1,13 +1,60 @@
 body {
     background-color: gray;
 }
-div{
-    height: 200px;
+.welcome{
+    height: auto;
     width: auto;
     background-color: red;
+    margin: 10px;
+    border: 2px solid black;
 }
 section {
     height: 500px;
     width: auto;
     background-color: blue;
+    padding: auto;
+    border: 1px solid black;
+    margin: 10px;
+}
+.top-nav{
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.top-nav a.left{
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.top-nav a.right{
+    float: right;
+    color: #f2f2f2;
+    padding: 14px 16px;
+}
+.top-nav a:hover{
+    background-color: rgb(143, 136, 136);
+    color: black;
+}
+.top-nav a.active {
+    background-color: rgb(20, 192, 63);
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.top-nav .fit{
+    margin: 2px;
+    overflow: hidden;
 }
