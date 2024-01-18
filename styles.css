@@ -1,30 +1,46 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
     background-color: gray;
 }
+
 .welcome{
     height: auto;
     width: auto;
     background-color: red;
     margin: 10px;
     border: 2px solid black;
+    justify-items: center;
 }
+
 section {
-    height: 500px;
-    width: auto;
-    background-color: blue;
-    padding: auto;
+    height: 90vh;
+    min-width: 100vw;
+    background-color: rgb(209, 192, 192);
     border: 1px solid black;
-    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10vh;
 }
-.top-nav{
+.nav{
     background-color: black;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     left: 0;
+    z-index: 1;
+    min-height: 10vh;
 }
-.top-nav a.left{
+.nav a.left{
     float:left;
     display: block;
     color: #f2f2f2;
@@ -33,28 +49,53 @@ section {
     text-decoration: none;
     font-size: 20px;
 }
-.top-nav a.right{
+.nav a.right{
     float: right;
     color: #f2f2f2;
     padding: 14px 16px;
 }
-.top-nav a:hover{
+.nav a:hover{
     background-color: rgb(143, 136, 136);
     color: black;
 }
-.top-nav a.active {
+.nav a.active {
     background-color: rgb(20, 192, 63);
     color: white;
 }
 .fa {
     padding: 20px;
+    margin-top: 2px;
     font-size: 30px;
-    width: 30px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 50px;
     text-decoration: none;
 }
 .top-nav .fit{
     margin: 2px;
+    overflow: hidden;
+}
+
+#Gcon {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    column-gap: 10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#card{ 
+    height:50px;
+    width: 60px;
+    margin: 50px;
+    justify-items: center;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    display: table;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px gray;
+    padding: 50px;
+    position: relatives;
     overflow: hidden;
 }
