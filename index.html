@@ -6,13 +6,15 @@
     <title>Personal Portfolio</title>
     <link rel = "stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+
     <div class="nav">
         <a href="#me" class="left">Portfolio</a>
         <a href="#about" class="left">About</a>
         <a href="#works" class="left">My Works</a>
-        <a href="#emails" class="left">Contacts</a>
         <div class="fit">
             <a href="https://www.facebook.com/" class="fa fa-facebook right"></a>
             <a href="https://twitter.com/?lang=en" class="fa fa-twitter right"></a>
@@ -20,46 +22,63 @@
         </div>
     </div>
 
-    <div id="Gcon">
+	<div id="parentGcon">
+        <div id="Gcon">
 
-        <section id="me">
-            <div class="welcome" >
-                <div class="circle">
-                    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/07/doom-toot-poster.jpg" alt="doot">
-                </div>
-                <div class="intro">
-                    <h1>Hi! im Jason Salvatera</h1>
-                    <h3>A Web Developer</h3>
-                </div>
-            </div>
-        </section>
+            <section id="me">
+                <div class="welcome" >
 
-        <section class="about" id="about">
-            <div id="card">
-                <div id="top-card"></div>
-            </div>
-            <div id="card">
-                <div id="top-card"></div>
-            </div>
-        </section>
-    
-        <section class="works" id="works">
-            <div id="card">
-                <a href="https://salvatera.github.io/Technical_Documentation_page/">Technical Documentation page</a>
-            </div>
-            <div id="card">
-                <a href="https://salvatera.github.io/Product_landing_page/">Product landing page</a>
-            </div>
-            <div id="card">
-                <a href="https://salvatera.github.io/Tribute_page/">Sample Tribute page</a>
-            </div>
-        </section>
-    
-        <section class="emails" id="emails">
-            <div>
-    
-            </div>
-        </section>
-    </div>
+                    <div class="circle">
+                        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/07/doom-toot-poster.jpg" alt="doot">
+                    </div>
+
+                    <div class="intro">
+                        <h1 style="color: #e5e5e5;"><b style="color: #fca311;">Hi!</b> I'am Jason Salvatera</h1>
+                        <h3 style="color: #e5e5e5;">A Developer</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div id="card">
+                    <br>
+                    <h1>About Me</h1>
+                    <br>
+                    
+                </div>
+                <div id="card">
+                    <br>
+                    <h1>Contacts</h1>
+                    <br>
+
+                </div>
+            </section>
+
+            <section class="works" id="works">
+                <div id="card">
+                    <div id="thumbnail">
+                        <iframe id="iframe" src="https://salvatera.github.io/Technical_Documentation_page/"></iframe>
+                    </div>
+                    <h4>Description: </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div id="card">
+                    <div id="thumbnail">
+                        <iframe id="iframe" src="https://salvatera.github.io/Product_landing_page/"></iframe>
+                    </div>
+                    <h4>Description: </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div id="card">
+                    <div id="thumbnail">
+                        <iframe id="iframe" src="https://salvatera.github.io/Tribute_page/"></iframe>
+                    </div>
+                    <h4>Description: </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </section>
+        </div>
+	</div>
+
 </body>
 </html>

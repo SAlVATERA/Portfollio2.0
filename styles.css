@@ -4,57 +4,73 @@
     box-sizing: border-box;
 }
 
-html,body {
+html, body {
     height: 100%;
-    width: 100%;
-    background-color: gray;
+    background-color: #14213d;
+    overflow: hidden;
 }
-img{
+
+img {
     max-height: 100%;
     max-width: 100%;
     z-index: 1;
     position: relative;
 }
+
 section {
-    height: 90vh;
-    min-width: 100vw;
-    background-color: rgb(209, 192, 192);
-    border: 1px solid black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-    border-radius: 30px;
-    margin-top: 9vh;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: #14213d;
+    gap: 20px;
+    border: 2px solid black;
 }
-.circle{
+#iframe {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.circle {
     height: 30%;
     width: 30%;
     border: 1px solid black;
     border-radius: 50%;
     float: right;
-    justify-content: center;
-    background-color: white;
     overflow: hidden;
-    margin: 2px;
 }
-.welcome{
-    min-width: 50%;
-    height: auto;
-    margin: 10px;
-    border: 2px solid black;
+.container{
+    margin:auto;
+    height: 80vh;
+    width: 80vw;
+    border: 5px solid black;
     display: flex;
 }
 
-.nav{
-    background-color: black;
-    overflow-x: hidden;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    left: 0;
-    z-index: 1;
+.circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.nav a.left{
-    float:left;
+
+.welcome {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    padding-top: 10%;
+}
+
+.nav {
+    background-color: black;
+    height: 8%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav a.left {
+    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -62,19 +78,24 @@ section {
     text-decoration: none;
     font-size: 20px;
 }
-.nav a.right{
+
+.nav a.right {
     float: right;
     color: #f2f2f2;
     padding: 14px 16px;
 }
-.nav a:hover{
-    background-color: rgb(143, 136, 136);
+
+.nav a:hover {
+    background-color: #e5e5e5;
+    color: black;
+    transition: ease 1s;
+}
+
+.nav a:active {
+    background-color: #e5e5e5;
     color: black;
 }
-.nav a:active{
-    background-color: white;
-    color: black;
-}
+
 .fa {
     padding: 20px;
     margin-top: 2px;
@@ -83,35 +104,81 @@ section {
     border-radius: 50px;
     text-decoration: none;
 }
-.top-nav .fit{
+
+.top-nav .fit {
     margin: 2px;
     overflow: hidden;
 }
-.about, .works{
+
+.about,
+.works,
+.contacts {
     display: flex;
     overflow: hidden;
     justify-content: center;
 }
-#Gcon {
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    width: 100%;
-    column-gap: 10px;
-    overflow: hidden;
-    scroll-behavior: smooth;
+
+#parentgcon {
+    height: 95%;
 }
 
-#card{
-    height: 95%;
-    width: 50%;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: whitesmoke;
+#Gcon {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#card {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    border-radius: 25px;
+    transition: ease 2s;
+    position: relative;
     border: 1px solid black;
     box-shadow: 0 2px 4px gray;
+    background-color: #fca311;
+    overflow: hidden;
 }
-#card:hover{
-    background-color: black;
-    color: cadetblue;
+
+#card:hover {
+    background-color: #e85d04;
+    opacity: 90%;
+    transition: ease 2s;
+}
+
+#thumbnail {
+    height: 50%;
+    width: 100%;
+    background-color: #14213d;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .nav {
+        height: auto;
+        text-align: center;
+    }
+
+    .nav a {
+        float: none;
+        display: inline-block;
+    }
+
+    #Gcon {
+        grid-template-columns: auto;
+    }
+
+    #card {
+        width: 90vw;
+    }
 }
