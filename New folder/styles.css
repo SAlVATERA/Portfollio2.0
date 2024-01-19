@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    background-color: gray;
+	overflow: hidden;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 1;
+    position: relative;
+}
+section {
+    margin: auto;
+	height: 100vh;
+	width: 100vw;
+	background-color: blue;
+	gap: 10px;
+}
+.circle{
+    height: 30%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: right;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    margin: 2px;
+}
+.welcome{
+    min-width: 50%;
+    height: auto;
+    margin: 10px;
+    display: flex;
+	padding-top: 10%;
+}
+.nav{
+    background-color: black;
+	height:5%;
+}
+.nav a.left{
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav a.right{
+    float: right;
+    color: #f2f2f2;
+    padding: 14px 16px;
+}
+.nav a:hover{
+    background-color: rgb(143, 136, 136);
+    color: black;
+	transition: 1s;s
+}
+.nav a:active{
+    background-color: white;
+    color: black;
+}
+.fa {
+    padding: 20px;
+    margin-top: 2px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.top-nav .fit{
+    margin: 2px;
+    overflow: hidden;
+}
+.about, .works{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+#parentgcon{
+	height:95%;
+}
+#Gcon {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+#card{
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+  border-radius: 25px;
+  transition: ease 2s;
+  position: relative;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px gray;
+}
+#card:hover{
+    background-color: red;
+	transition: ease 2s;
+}
