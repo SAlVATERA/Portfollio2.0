@@ -8,36 +8,28 @@ html, body {
     height: 100%;
     background-color: #14213d;
     overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-img {
-    max-height: 100%;
-    max-width: 100%;
-    z-index: 1;
-    position: relative;
-}
-
 section {
     margin: auto;
     height: 100vh;
     width: 100vw;
     background-color: #14213d;
     gap: 20px;
-    border: 2px solid black;
 }
 #iframe {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
-
 .circle {
-    height: 30%;
-    width: 30%;
+    height: 225px;
+    width: 225px;
     border: 1px solid black;
     border-radius: 50%;
     float: right;
     overflow: hidden;
+    margin: 2px;
 }
 .container{
     margin:auto;
@@ -46,21 +38,19 @@ section {
     border: 5px solid black;
     display: flex;
 }
-
 .circle img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
-
-.welcome {
-    width: auto;
-    height: auto;
-    margin: 10px;
+.banner{
+    width: 100vw;
+    height: 50vh;
     display: flex;
-    padding-top: 10%;
+    padding-top: 60px;
+    background-color: #2b2d42;
+    font-size: 30px;
 }
-
 .nav {
     background-color: black;
     height: 8%;
@@ -68,7 +58,6 @@ section {
     width: 100%;
     z-index: 2;
 }
-
 .nav a.left {
     float: left;
     display: block;
@@ -78,24 +67,20 @@ section {
     text-decoration: none;
     font-size: 20px;
 }
-
 .nav a.right {
     float: right;
     color: #f2f2f2;
     padding: 14px 16px;
 }
-
 .nav a:hover {
     background-color: #e5e5e5;
     color: black;
     transition: ease 1s;
 }
-
 .nav a:active {
     background-color: #e5e5e5;
     color: black;
 }
-
 .fa {
     padding: 20px;
     margin-top: 2px;
@@ -104,7 +89,6 @@ section {
     border-radius: 50px;
     text-decoration: none;
 }
-
 .top-nav .fit {
     margin: 2px;
     overflow: hidden;
@@ -117,20 +101,17 @@ section {
     overflow: hidden;
     justify-content: center;
 }
-
 #parentgcon {
     height: 95%;
 }
-
 #Gcon {
     height: 100%;
     width: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
 }
-
 #card {
     height: 80vh;
     width: 80vw;
@@ -140,28 +121,34 @@ section {
     position: relative;
     border: 1px solid black;
     box-shadow: 0 2px 4px gray;
-    background-color: #fca311;
+    background-color: #ffffff;
     overflow: hidden;
 }
-
-#card:hover {
-    background-color: #e85d04;
-    opacity: 90%;
-    transition: ease 2s;
-}
-
-#thumbnail {
-    height: 50%;
+#work-top {
+    height: 80%;
     width: 100%;
-    background-color: #14213d;
     overflow: hidden;
 }
-
+#work-bot {
+    height: 20%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #03071e;
+    justify-content: center;
+    text-align: center;
+}
+#work-bot p{
+    margin-top: 30px;
+    color: #98c1d9;
+}
+#work-bot p:hover{
+    color: white;
+}
 @media only screen and (max-width: 767px) {
     section {
         display: flex;
-        height: auto;
-        flex-direction: column;
+        height: 100vh;
+        flex-direction: row;
     }
 
     .nav {
@@ -179,6 +166,13 @@ section {
     }
 
     #card {
-        width: 90vw;
+        height: 80vh;
+        width: 80vw;
+    }
+    .banner{
+        height: 50vh;
+        width: 100vw;
+        padding-top: 60px;
+        font-size: 20px;
     }
 }
