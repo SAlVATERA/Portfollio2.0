@@ -17,6 +17,13 @@ section {
     background-color: #14213d;
     gap: 20px;
 }
+p{
+    display: inline;
+}
+li{
+    margin-left: 10%;
+    list-style-type: circle;
+}
 #iframe {
     height: 100%;
     width: 100%;
